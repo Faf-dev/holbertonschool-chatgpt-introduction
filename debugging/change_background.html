@@ -9,11 +9,20 @@
         font-family: Arial, sans-serif;
         text-align: center;
         padding-top: 50px;
+        transition: background-color 0.5s; /* Ajout d'une transition pour un effet plus doux */
     }
     button {
         padding: 10px 20px;
         font-size: 16px;
         cursor: pointer;
+        border: none; /* Suppression de la bordure par défaut */
+        border-radius: 5px; /* Ajout d'un arrondi */
+        background-color: #007BFF; /* Couleur de fond du bouton */
+        color: white; /* Couleur du texte du bouton */
+        transition: background-color 0.3s; /* Transition pour le bouton */
+    }
+    button:hover {
+        background-color: #0056b3; /* Couleur au survol */
     }
 </style>
 </head>
@@ -29,9 +38,9 @@
     });
 
     function changeBackgroundColor() {
-        /* Generate a random color */
-        var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
-        /* Change the background color of the body */
+        /* Générer une couleur aléatoire */
+        var randomColor = "#" + Math.floor(Math.random() 16777215).toString(16).padStart(6, '0');
+        /* Changer la couleur de fond du corps */
         document.body.style.backgroundColor = randomColor;
     }
 </script>

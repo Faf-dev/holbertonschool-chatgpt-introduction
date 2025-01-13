@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 class Checkbook:
     def __init__(self):
         """Initialise le solde du compte à 0.0."""
